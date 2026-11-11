@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://humzarashid.com/sitemap.xml
