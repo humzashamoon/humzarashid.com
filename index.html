@@ -107,7 +107,8 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 .tang li { padding: 14px 16px 0 0; border-top: 3px solid var(--pink); font-size: 1rem; line-height: 1.35; }
 .tang li + li { padding-left: 16px; }
 .tang li:nth-child(2) { border-color: var(--cyan); } .tang li:nth-child(3) { border-color: var(--yellow); } .tang li:nth-child(4) { border-color: var(--green-hi); }
-@media (max-width: 800px) { .tang ul { grid-template-columns: minmax(0, 1fr); } .tang li, .tang li + li { padding: 12px 0; } }
+@media (max-width: 800px) { .tang ul { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 18px; } .tang li:nth-child(3) { padding-left: 0; } }
+@media (max-width: 520px) { .tang ul { grid-template-columns: minmax(0, 1fr); row-gap: 0; } .tang li, .tang li + li { padding: 12px 0; } }
 .lenses { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border: 2px solid var(--ink); background: var(--white); }
 .lens { padding: 22px 24px 24px; display: grid; gap: 8px; align-content: start; min-width: 0; }
 .lens + .lens { border-left: 2px solid var(--ink); }
