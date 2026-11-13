@@ -119,6 +119,9 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 .lens + .lens { border-left: 2px solid var(--ink); }
 .lens .chip { display: inline-flex; align-items: center; gap: 10px; font-family: var(--f-d); font-weight: 800; font-size: 1.9rem; letter-spacing: -.03em; line-height: 1; }
 .lens .chip i { width: 26px; height: 26px; border-radius: 50%; }
+.lens-school { font-family: var(--f-d); font-weight: 700; font-size: 1.2rem; letter-spacing: -.015em; line-height: 1.2; }
+.lens-yr { font-family: var(--f-m); font-size: .76rem; letter-spacing: .04em; text-transform: uppercase; color: var(--mut); }
+.lens p { margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--rule); color: var(--mut); font-size: .98rem; }
 .lens-note { margin-top: 16px; font-family: var(--f-d); font-weight: 600; font-size: 1.2rem; letter-spacing: -.015em; }
 
 .pubs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
@@ -309,9 +312,9 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 <div class="head"><span class="ey">About</span><h2>One problem, three lenses.</h2>
 <p>My goal is to practice medicine and improve the systems that govern it, as a cardiologist who also leads.</p></div>
 <div class="lenses">
-<div class="lens"><span class="chip"><i style="background:var(--pink)"></i>MD</span><p>Grounds the work in real clinical care.</p></div>
-<div class="lens"><span class="chip"><i style="background:var(--yellow)"></i>MPH</span><p>Keeps it focused on prevention and populations.</p></div>
-<div class="lens"><span class="chip"><i style="background:var(--cyan)"></i>MBA</span><p>Tests whether it can scale and sustain itself.</p></div></div>
+<div class="lens"><span class="chip"><i style="background:var(--pink)"></i>MD</span><span class="lens-school">UConn School of Medicine</span><span class="lens-yr">Expected 2028</span><p>Grounds the work in real clinical care.</p></div>
+<div class="lens"><span class="chip"><i style="background:var(--yellow)"></i>MPH</span><span class="lens-school">Harvard T.H. Chan School of Public Health</span><span class="lens-yr">Health Management · Expected 2027</span><p>Keeps it focused on prevention and populations.</p></div>
+<div class="lens"><span class="chip"><i style="background:var(--cyan)"></i>MBA</span><span class="lens-school">Emory Goizueta Business School</span><span class="lens-yr">2026</span><p>Tests whether it can scale and sustain itself.</p></div></div>
 <p class="lens-note">Together: clinical, operational, and financial at the same time.</p></section>
 
 <section class="sec w" id="why"><div class="why"><div><span class="ey">Why</span><h2>It started in Vehari.</h2></div>
