@@ -192,6 +192,11 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 .lahore h2 em { font-style: normal; color: var(--green-hi); }
 .l-t { display: grid; gap: 18px; }
 .l-t p { color: rgba(255,255,255,.92); }
+.stamp { justify-self: start; display: grid; gap: 2px; padding: 10px 16px; border: 2px solid var(--green-hi); color: var(--green-hi); transform: rotate(-2deg); transform-origin: left center; }
+.stamp b { font-family: var(--f-d); font-weight: 800; font-size: 1.05rem; letter-spacing: -.01em; }
+.stamp span { font-family: var(--f-m); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; opacity: .85; }
+.honors .hon-new { border-top-color: var(--green); }
+@media (min-width: 801px) { #education .honors { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .origin { border-left: 4px solid var(--green-hi); padding-left: 18px; color: rgba(255,255,255,.8) !important; }
 .lahore .mono { color: rgba(255,255,255,.7); }
 .big { font-family: var(--f-d); font-weight: 800; font-size: clamp(5rem, 13vw, 9.5rem); line-height: .8; letter-spacing: -.06em; color: var(--green-hi); }
@@ -304,7 +309,7 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 
 <div class="now"><div class="w">
 <div><span class="ey"><i style="background:var(--yellow)"></i>Now</span><strong>MPH, Health Management</strong><span class="wh">Harvard T.H. Chan, Boston</span></div>
-<div><span class="ey"><i style="background:var(--green-hi)"></i>Dec 2026</span><strong>HPV vaccine practicum</strong><span class="wh">Institute of Public Health, Lahore</span></div>
+<div><span class="ey"><i style="background:var(--green-hi)"></i>Dec 2026</span><strong>HPV vaccine practicum</strong><span class="wh">Institute of Public Health, Lahore · Rose Fellow</span></div>
 <div><span class="ey"><i style="background:var(--pink)"></i>Jun 2027</span><strong>Final clinical year</strong><span class="wh">UConn School of Medicine</span></div></div></div>
 
 <div class="tiles">
@@ -357,7 +362,8 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 
 <section class="lahore" id="lahore"><div class="w">
 <div class="l-t"><span class="ey">MPH Practicum · Dec 2026 – Jan 2027</span><h2>HPV vaccine trust in <em>Lahore.</em></h2>
-<p>Pakistan launched HPV vaccination for girls 9–14 in September 2025. Coverage in Punjab is 47.6%, and the Institute of Public Health names hesitancy as the main barrier.</p><p>I'm partnering with IPH's awareness team to support sessions with families and frontline health workers, and to turn their feedback into recommendations for future campaigns.</p><p class="origin">I found this project through two months of cold outreach across Pakistan. When I asked Dean Afzal what her community needed most, she named HPV vaccine hesitancy.</p><span class="mono">Institute of Public Health, Lahore · Prof. Dr. Saira Afzal, Dean</span></div>
+<div class="stamp"><b>Rose Service Learning Fellow</b><span>Harvard T.H. Chan School of Public Health · Fall 2026</span></div>
+<p>Pakistan launched HPV vaccination for girls 9–14 in September 2025. Coverage in Punjab is 47.6%, and the Institute of Public Health names hesitancy as the main barrier.</p><p>I'm partnering with IPH's awareness team to support sessions with families and frontline health workers, and to turn their feedback into recommendations for future campaigns.</p><p class="origin">I found this project through two months of cold outreach across Pakistan. When I asked Dean Afzal what her community needed most, she named HPV vaccine hesitancy. Harvard Chan's Rose Fellowship, which funds projects built around a need the community itself names, is now supporting the work.</p><span class="mono">Institute of Public Health, Lahore · Prof. Dr. Saira Afzal, Dean</span></div>
 <div><div class="big">47.6%</div><p class="big-l">of girls 9–14 in Punjab were vaccinated in the 2025 campaign.</p><div class="z-bars"><div class="z-bar"><div class="z-bar-l"><span>Bhutan</span><b>94%</b></div><div class="z-track"><div class="z-fill z-fill-alt" style="width:94%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div><div class="z-bar"><div class="z-bar-l"><span>Maldives</span><b>75%</b></div><div class="z-track"><div class="z-fill z-fill-alt" style="width:75%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div><div class="z-bar"><div class="z-bar-l"><span>Pakistan, national</span><b>53.4%</b></div><div class="z-track"><div class="z-fill" style="width:53.4%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div><div class="z-bar"><div class="z-bar-l"><span>Sri Lanka</span><b>48%</b></div><div class="z-track"><div class="z-fill z-fill-alt" style="width:48%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div><div class="z-bar"><div class="z-bar-l"><span>Punjab</span><b>47.6%</b></div><div class="z-track"><div class="z-fill" style="width:47.6%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div>
 <p class="z-cap">Girls vaccinated against HPV. Pakistan and Punjab: WHO-overseen survey after the September 2025 campaign. Other countries: WHO/UNICEF 2024 coverage. The line marks WHO's 90% target for 2030.</p></div></div></div></section>
 
@@ -369,6 +375,7 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 <div class="g-l" style="grid-column:1">MPH<small>Harvard T.H. Chan</small></div><div class="g-b" style="grid-column:10;background:var(--yellow)">● Now</div>
 <div class="g-y" style="grid-column:2">18–19</div><div class="g-y" style="grid-column:3">19–20</div><div class="g-y" style="grid-column:4">20–21</div><div class="g-y" style="grid-column:5">21–22</div><div class="g-y" style="grid-column:6">22–23</div><div class="g-y" style="grid-column:7">23–24</div><div class="g-y" style="grid-column:8">24–25</div><div class="g-y" style="grid-column:9">25–26</div><div class="g-y" style="grid-column:10">26–27</div><div class="g-y" style="grid-column:11">27–28</div></div></div>
 <h3 class="hon-h">Honors</h3><div class="honors">
+<div class="hon-new"><span class="ey">Harvard T.H. Chan · 2026</span><b>Rose Service Learning Fellowship</b><p>Funds community-engaged projects built around a need the community identifies.</p></div>
 <div><span class="ey">Boston College</span><b>Phi Beta Kappa</b><p>The oldest academic honor society in the U.S.</p></div>
 <div><span class="ey">Boston College</span><b>Alpha Sigma Nu</b><p>The honor society of Jesuit universities.</p></div>
 <div><span class="ey">Boston College</span><b>Order of the Cross &amp; Crown</b><p>Arts &amp; Sciences honor society for seniors.</p></div>
