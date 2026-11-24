@@ -192,10 +192,18 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 .lahore h2 em { font-style: normal; color: var(--green-hi); }
 .l-t { display: grid; gap: 18px; }
 .l-t p { color: rgba(255,255,255,.92); }
-.stamp { justify-self: start; display: grid; gap: 2px; padding: 10px 16px; border: 2px solid var(--green-hi); color: var(--green-hi); transform: rotate(-2deg); transform-origin: left center; }
-.stamp b { font-family: var(--f-d); font-weight: 800; font-size: 1.05rem; letter-spacing: -.01em; }
-.stamp span { font-family: var(--f-m); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; opacity: .85; }
-.honors .hon-new { border-top-color: var(--green); }
+.rose-chip { justify-self: start; margin-top: 6px; font-family: var(--f-m); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; background: var(--green-hi); color: var(--ink); padding: 3px 9px; border-radius: 999px; }
+.stamp { justify-self: start; display: flex; align-items: center; gap: 16px; max-width: 100%; padding: 14px 22px 14px 14px; background: var(--green-hi); color: var(--ink); border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); transform: rotate(-1.5deg); transform-origin: left center; animation: stamp-in .7s cubic-bezier(.2,1.4,.4,1) .3s both; }
+.stamp .seal { width: 60px; height: 60px; flex: none; }
+.stamp > div { display: grid; gap: 2px; min-width: 0; }
+.stamp b { font-family: var(--f-d); font-weight: 800; font-size: clamp(1.15rem, 2.2vw, 1.45rem); letter-spacing: -.02em; line-height: 1.1; }
+.stamp span { font-family: var(--f-m); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; }
+.stamp .stamp-ey { font-weight: 500; letter-spacing: .1em; opacity: .7; }
+@keyframes stamp-in { from { opacity: 0; transform: rotate(-8deg) scale(1.25); } to { opacity: 1; transform: rotate(-1.5deg) scale(1); } }
+@media (prefers-reduced-motion: reduce) { .stamp { animation: none; } }
+@media (max-width: 520px) { .stamp { padding: 12px 16px 12px 12px; gap: 12px; box-shadow: 4px 4px 0 var(--ink); } .stamp .seal { width: 48px; height: 48px; } }
+.honors .hon-new { background: var(--green-hi); border-top-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+.honors .hon-new p { color: var(--ink); }
 @media (min-width: 801px) { #education .honors { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .origin { border-left: 4px solid var(--green-hi); padding-left: 18px; color: rgba(255,255,255,.8) !important; }
 .lahore .mono { color: rgba(255,255,255,.7); }
@@ -309,7 +317,7 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 
 <div class="now"><div class="w">
 <div><span class="ey"><i style="background:var(--yellow)"></i>Now</span><strong>MPH, Health Management</strong><span class="wh">Harvard T.H. Chan, Boston</span></div>
-<div><span class="ey"><i style="background:var(--green-hi)"></i>Dec 2026</span><strong>HPV vaccine practicum</strong><span class="wh">Institute of Public Health, Lahore · Rose Fellow</span></div>
+<div><span class="ey"><i style="background:var(--green-hi)"></i>Dec 2026</span><strong>HPV vaccine practicum</strong><span class="wh">Institute of Public Health, Lahore</span><span class="rose-chip">★ Rose Fellow</span></div>
 <div><span class="ey"><i style="background:var(--pink)"></i>Jun 2027</span><strong>Final clinical year</strong><span class="wh">UConn School of Medicine</span></div></div></div>
 
 <div class="tiles">
@@ -362,7 +370,7 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 
 <section class="lahore" id="lahore"><div class="w">
 <div class="l-t"><span class="ey">MPH Practicum · Dec 2026 – Jan 2027</span><h2>HPV vaccine trust in <em>Lahore.</em></h2>
-<div class="stamp"><b>Rose Service Learning Fellow</b><span>Harvard T.H. Chan School of Public Health · Fall 2026</span></div>
+<div class="stamp"><svg class="seal" viewBox="0 0 64 64" aria-hidden="true"><polygon points="32.0,2.0 36.1,6.3 41.3,3.5 43.8,8.8 49.6,7.7 50.4,13.6 56.3,14.4 55.2,20.2 60.5,22.7 57.7,27.9 62.0,32.0 57.7,36.1 60.5,41.3 55.2,43.8 56.3,49.6 50.4,50.4 49.6,56.3 43.8,55.2 41.3,60.5 36.1,57.7 32.0,62.0 27.9,57.7 22.7,60.5 20.2,55.2 14.4,56.3 13.6,50.4 7.7,49.6 8.8,43.8 3.5,41.3 6.3,36.1 2.0,32.0 6.3,27.9 3.5,22.7 8.8,20.2 7.7,14.4 13.6,13.6 14.4,7.7 20.2,8.8 22.7,3.5 27.9,6.3" fill="var(--ink)"/><circle cx="32" cy="32" r="21" fill="none" stroke="var(--green-hi)" stroke-width="1.5" stroke-dasharray="2 2.5"/><text x="32" y="30" text-anchor="middle" style="font-family:var(--f-m);font-size:7px;letter-spacing:.08em;fill:var(--green-hi)">ROSE</text><text x="32" y="41" text-anchor="middle" style="font-family:var(--f-d);font-weight:800;font-size:11px;fill:var(--green-hi)">2026</text></svg><div><span class="stamp-ey">Funded by</span><b>Rose Service Learning Fellowship</b><span>Harvard T.H. Chan School of Public Health · Fall 2026</span></div></div>
 <p>Pakistan launched HPV vaccination for girls 9–14 in September 2025. Coverage in Punjab is 47.6%, and the Institute of Public Health names hesitancy as the main barrier.</p><p>I'm partnering with IPH's awareness team to support sessions with families and frontline health workers, and to turn their feedback into recommendations for future campaigns.</p><p class="origin">I found this project through two months of cold outreach across Pakistan. When I asked Dean Afzal what her community needed most, she named HPV vaccine hesitancy. Harvard Chan's Rose Fellowship, which funds projects built around a need the community itself names, is now supporting the work.</p><span class="mono">Institute of Public Health, Lahore · Prof. Dr. Saira Afzal, Dean</span></div>
 <div><div class="big">47.6%</div><p class="big-l">of girls 9–14 in Punjab were vaccinated in the 2025 campaign.</p><div class="z-bars"><div class="z-bar"><div class="z-bar-l"><span>Bhutan</span><b>94%</b></div><div class="z-track"><div class="z-fill z-fill-alt" style="width:94%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div><div class="z-bar"><div class="z-bar-l"><span>Maldives</span><b>75%</b></div><div class="z-track"><div class="z-fill z-fill-alt" style="width:75%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div><div class="z-bar"><div class="z-bar-l"><span>Pakistan, national</span><b>53.4%</b></div><div class="z-track"><div class="z-fill" style="width:53.4%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div><div class="z-bar"><div class="z-bar-l"><span>Sri Lanka</span><b>48%</b></div><div class="z-track"><div class="z-fill z-fill-alt" style="width:48%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div><div class="z-bar"><div class="z-bar-l"><span>Punjab</span><b>47.6%</b></div><div class="z-track"><div class="z-fill" style="width:47.6%"></div><i style="position:absolute;left:90%;top:0;bottom:0;width:2px;background:currentColor"></i></div></div>
 <p class="z-cap">Girls vaccinated against HPV. Pakistan and Punjab: WHO-overseen survey after the September 2025 campaign. Other countries: WHO/UNICEF 2024 coverage. The line marks WHO's 90% target for 2030.</p></div></div></div></section>
