@@ -193,13 +193,13 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 .l-t { display: grid; gap: 18px; }
 .l-t p { color: rgba(255,255,255,.92); }
 .rose-chip { justify-self: start; margin-top: 6px; font-family: var(--f-m); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; background: var(--green-hi); color: var(--ink); padding: 3px 9px; border-radius: 999px; }
-.stamp { justify-self: start; display: flex; align-items: center; gap: 16px; max-width: 100%; padding: 14px 22px 14px 14px; background: var(--green-hi); color: var(--ink); border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); transform: rotate(-1.5deg); transform-origin: left center; animation: stamp-in .7s cubic-bezier(.2,1.4,.4,1) .3s both; }
+.stamp { justify-self: start; display: flex; align-items: center; gap: 16px; max-width: 100%; padding: 14px 22px 14px 14px; background: var(--green-hi); color: var(--ink); border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); animation: stamp-in .5s ease-out .3s both; }
 .stamp .seal { width: 60px; height: 60px; flex: none; }
 .stamp > div { display: grid; gap: 2px; min-width: 0; }
 .stamp b { font-family: var(--f-d); font-weight: 800; font-size: clamp(1.15rem, 2.2vw, 1.45rem); letter-spacing: -.02em; line-height: 1.1; }
 .stamp span { font-family: var(--f-m); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; }
 .stamp .stamp-ey { font-weight: 500; letter-spacing: .1em; opacity: .7; }
-@keyframes stamp-in { from { opacity: 0; transform: rotate(-8deg) scale(1.25); } to { opacity: 1; transform: rotate(-1.5deg) scale(1); } }
+@keyframes stamp-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .stamp { animation: none; } }
 @media (max-width: 520px) { .stamp { padding: 12px 16px 12px 12px; gap: 12px; box-shadow: 4px 4px 0 var(--ink); } .stamp .seal { width: 48px; height: 48px; } }
 .honors .hon-new { background: var(--green-hi); border-top-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
@@ -317,7 +317,7 @@ h3 { font-family: var(--f-d); font-weight: 700; letter-spacing: -.015em; line-he
 
 <div class="now"><div class="w">
 <div><span class="ey"><i style="background:var(--yellow)"></i>Now</span><strong>MPH, Health Management</strong><span class="wh">Harvard T.H. Chan, Boston</span></div>
-<div><span class="ey"><i style="background:var(--green-hi)"></i>Dec 2026</span><strong>HPV vaccine practicum</strong><span class="wh">Institute of Public Health, Lahore</span><span class="rose-chip">★ Rose Fellow</span></div>
+<div><span class="ey"><i style="background:var(--green-hi)"></i>Dec 2026</span><strong>HPV vaccine practicum</strong><span class="wh">Institute of Public Health, Lahore</span><span class="rose-chip">★ Rose Service Learning Fellowship</span></div>
 <div><span class="ey"><i style="background:var(--pink)"></i>Jun 2027</span><strong>Final clinical year</strong><span class="wh">UConn School of Medicine</span></div></div></div>
 
 <div class="tiles">
